@@ -1,0 +1,9 @@
+version: '2'
+services:
+  flaskblog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flaskblog
+    ports:
+      - "5000:5000"
